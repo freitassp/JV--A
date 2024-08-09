@@ -1,0 +1,282 @@
+:root {
+    --cor-primaria: #1dbd38; /* Cor principal */
+    --cor-secundaria: #10be7c; /* Cor secundária */
+    --fonte-principal: 'Roboto', sans-serif; /* Fonte principal */
+}
+
+body {
+    font-family: var(--fonte-principal);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(to bottom, var(--cor-primaria), #2980b9);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+.logo {
+    width: 100px; 
+    height: auto; 
+    display: block; 
+    float: left; 
+    margin-right: 20px; 
+}
+
+.titulo-02{
+    text-align: center;
+}
+
+.conteudo-paginas{
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    text-indent: 2em;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-flex;
+    margin-right: 20px;
+    float: right;
+   
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+    
+}
+
+.section-text {
+    flex: 1 1 300px;
+    margin-right: 20px;
+}
+
+.section-text h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.section-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.section-image {
+    flex: 1 1 300px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.section-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+main {
+    padding: 20px 0;
+}
+.main-conteudo{
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+    width: 95%;
+    box-sizing: border-box;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+#imagem-1{
+    height: auto;
+}
+
+#imagem-2{
+    height: 220px;
+}
+
+#reciclando{
+    height: 205px;
+    width: 600px;
+}
+
+
+section {
+    margin-bottom: 20px;
+}
+
+.content{
+    background-color: #f1f3f4;
+    padding: 50px;
+    margin: 0px;
+    border-radius: 30px;    
+    
+}
+.content img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background: linear-gradient(to bottom, var(--cor-primaria), #2980b9);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content .gallery .card {
+    width: 100%;
+}
+
+.content .gallery .card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.content .gallery .card .card-info {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.content .gallery .card .card-info h3 {
+    margin-top: 0;
+}
+
+.content .gallery .card .card-info p {
+    margin-bottom: 10px;
+}
+
+.content .gallery .card .card-info .button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; /* Remover sublinhado do link */
+}
+
+
+@media screen and (max-width: 768px) {
+    .content .gallery img {
+        width: calc(50% - 10px);
+    }
+
+    .paginaalternativa {
+        max-width: 280px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content .gallery img {
+        width: 100%;
+    }
+
+    .titulo-principal {
+        font-size: 1em;
+    }
+
+    .button {
+        padding: 8px 12px;
+    }
+
+    .paginaalternativa {
+        max-width: 240px;
+    }
+
+    .whatsapp-btn img {
+        width: 30px;
+    }
+}
+
+
+/*Whatz contato*/
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: green; /* Cor de fundo do botão */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .whatsapp-btn img {
+    width: 70%; /* Tamanho do ícone do WhatsApp */
+    }
+    .titulo-principal{
+        font-size: 500%;
+        font-family: "Jaro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .paginaalternativa
+    {
+        max-width: 330px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        border-radius: 15%;
+    }
+
+    
+
+   
